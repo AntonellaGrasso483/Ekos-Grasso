@@ -1,0 +1,369 @@
+/*Codigo General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body__contenedor {
+    margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.body__contenedor__div {
+    margin: 0;
+}
+
+.body__header__nav__menu__postalesEkos {
+    word-spacing: 0mm;
+}
+
+.navbar__logo {
+    width: 75%;
+}
+
+header{
+    position: relative;
+    padding: 20px;
+    background-color: #f7cec4;
+    width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: #FAE3DD;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+ul {
+    line-height: 15mm;
+    font-weight: bold;
+    list-style: none;
+}
+
+nav {
+    text-align: right;
+    word-spacing: 5mm;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    padding: 5px;
+    text-align: right;
+    font-weight: bold;
+    width: 100%;
+}
+
+h1, h2, h3, h4, legend {
+    font-family: 'Poppins';
+    color: #c16a49;
+}
+
+
+h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+h4 {
+    font-style: italic;
+}
+
+span {
+    color: #c16a49;
+}
+
+/* Index */
+
+.body__sectionA {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.body__sectionB {
+    text-align: center;
+    background-color: #f7cec4;
+}
+
+.body__sectionB__clientes {
+    display: flex;
+}
+
+.body__sectionB__clientes__divMedio {
+    background-color: #FAE3DD;
+}
+
+.body__sectionB__clientes div {
+    width: 34%;
+    padding: 10px;
+}
+
+.body__sectionB__clientes div:hover {
+    background-color: #ffbbaa;
+    transition: 1.5s;
+}
+
+.body__sectionB__h2 {
+    padding: 20px;
+}
+
+.body__sectionA__gif {
+    padding: 20px;
+    width: 90%;
+    align-self: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .body__sectionB__clientes {
+        display: flex;
+        flex-direction: column;
+    }
+    .body__sectionB__clientes div {
+        width: 100%;
+    }
+}
+
+/* Nosotros */
+
+.body__contenedor__section__nosotros {
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.body__contenedor__section__parrafo {
+    margin-left: 20%;
+    width: 60%;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: #f7cec4;
+    opacity: 0.8;
+}
+
+.body__contenedor__section__video {
+    position:fixed;
+    z-index: -1;
+}
+
+@media (max-width: 1024px) {
+    .body__contenedor__section__parrafo {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.body__footer__h5 {
+    color: #f7cec4;
+}
+
+/* Nuestros Trabajos */
+
+
+.body__section__galeria__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px 10px;
+    grid-template-areas: 
+    "imagen1 imagen1 imagen2 imagen3 imagen3"
+    "imagen1 imagen1 imagen2 imagen6 imagen6"
+    "imagen4 imagen5 imagen5 imagen6 imagen6";
+    padding: 10px;
+}
+
+@media (max-width:1875px) {
+    .body__section__galeria__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        gap: 10px 10px;
+        grid-template-areas: 
+        "imagen1 imagen2 imagen3"
+        "imagen4 imagen5 imagen6";
+    }
+}
+
+@media (max-width:1080px) {
+    .body__section__galeria__grid {
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: repeat(6, 250px);
+        gap: 10px 10px;
+        grid-template-areas: 
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4" 
+        "imagen5"
+        "imagen6";
+    }
+}
+
+.body__section__galeria__grid__imagen1 {
+    grid-area: imagen1;
+    background-image: url(../multimedia/15anios2.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.body__section__galeria__grid__imagen2 {
+    grid-area: imagen2;
+    background-image: url(../multimedia/corporativa.jpg);
+    background-position: center;
+    background-size: 170%;
+    background-repeat: no-repeat;
+}
+
+
+.body__section__galeria__grid__imagen3 {
+    grid-area: imagen3;
+    background-image: url(../multimedia/casamiento.jpg);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.body__section__galeria__grid__imagen4 {
+    grid-area: imagen4;
+    background-image: url(../multimedia/15anios.jpg);
+    background-position: center;
+    background-size: 130%;
+    background-repeat: no-repeat;
+}
+
+.body__section__galeria__grid__imagen5 {
+    grid-area: imagen5;
+    background-image: url(../multimedia/egresados.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.body__section__galeria__grid__imagen6 {
+    grid-area: imagen6;
+    background-image: url(../multimedia/casamiento2.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:1080px) {
+    .body__section__galeria__grid__imagen1 {
+        background-position: top;
+    }
+}
+
+@media (max-width:420px) {
+    .body__section__galeria__grid__imagen1 {
+        background-size: 150%;
+    }
+    .body__section__galeria__grid__imagen2 {
+        background-size: 200%;
+    }
+    .body__section__galeria__grid__imagen3 {
+        background-size: 175%;
+    }
+    .body__section__galeria__grid__imagen4 {
+        background-size: 180%;
+    }
+    .body__section__galeria__grid__imagen5 {
+        background-size: 150%;
+    }
+    .body__section__galeria__grid__imagen6 {
+        background-size: 150%;
+    }
+}
+
+/* Sucursales */
+
+.body__contenedor__titulo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.body__contenedor__sucursales__sectionA__mapa {
+    height: 400px;
+}
+
+.body__contenedor__sucursales__sectionB {
+    padding: 20px;
+    width: 45%;
+    margin-top: 70px;
+}
+
+.body__contenedor__sucursales__sectionA {
+    padding: 20px;
+}
+
+.body__contenedor__sucursales__sectionA__p {
+    line-height: 30px;
+}
+
+.body__footer__sucursales {
+    background-color: #f7cec4;
+}
+
+.btn__custom {
+    background-color: #f7cec4;
+}
+
+.btn__custom2 {
+    background-color: rgb(182, 179, 179);
+}
+
+.modal-content {
+    background-color: #FAE3DD;
+}
+
+@media (max-width:767px) {
+    .body__contenedor__sucursales__sectionB {
+        width: 100%;
+    }
+}
+/* Contacto */
+
+.body__section__contenedor__formulario__div {
+    border: 2px;
+    border-color: #ffbbaa;
+    border-style: dotted;
+    padding: 5%;
+}
+
+.body__section__contenedor__formulario {
+    text-align: left;
+}
+
+.body__section__contenedor__botones {
+    text-align: right;
+}

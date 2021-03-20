@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/estilos_2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="description" content="Ekos te acompaña en la planificación y organización del evento de tus sueños! Entrá para ponerte en contacto con nosotros.">
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="navbar__logo" src="multimedia/logo.png" alt="logo_Ekos"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="menu__derecha">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item body__header__nav__menu__postalesEkos">
+                            <a class="nav-link" href="trabajos.html">Postales Ekos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row body__contenedor">
+        <section class="col-12 col-md-6">
+            <h1>Contacto</h1>
+            <p class="body__section__parrafo fs-3">
+                Completá el formulario con tus datos e información sobre el evento que tenés en mente.
+                Nos pondremos en contacto con vos lo antes posible. Cualquier duda o pregunta no dudes en consultarnos. <span class="fw-bold">¡Empecemos a soñar tu evento!</span>
+            </p>
+        </section>
+        <section class="col-12 col-md-6">
+            <form action="" method="GET">
+                <div class="mb-3">
+                    <legend>Tus Datos</legend>
+                    <div class="body__section__contenedor__formulario">
+                        <div class="body__section__contenedor__formulario__div">
+                            <label for="nombre" class="form-label">Nombre y apellido*</label>
+                            <input type="text" class="form-control">
+                            <label for="provincia" class="form-label">Provincia*</label>
+                            <select name="provincia" class="form-select">
+                                <option disabled selected value> -- Seleccioná tu provincia -- </option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Buenos Aires">Buenos Aires</option>
+                                <option value="Rosario">Santa Fe</option>
+                                <option value="San Luis">San Luis</option>
+                            </select>
+                            <label for="email" class="form-label">Ingresá tu email*</label>
+                            <input type="email" name="mail" class="form-control" placeholder="ejemplo@gmail.com">
+                            <div>
+                                <p class="fs-6 text-start fw-bold">
+                                    *Campos obligatorios
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <legend>Tu evento</legend>
+                    <div class="body__section__contenedor__formulario">
+                        <div class="body__section__contenedor__formulario__div">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label for="evento" class="form-label">¿Qué evento querés planificar con nosotros?*</label>
+                                    <select name="evento" class="form-select">
+                                        <option disabled selected value> -- Seleccioná tu evento -- </option>
+                                        <option value="casamiento">Casamiento</option>
+                                        <option value="egresados">Fiesta de egresados</option>
+                                        <option value="15 años">Fiesta de 15 años</option>
+                                        <option value="infantil">Infantil</option>
+                                        <option value="empresarial">Empresarial/Corporativo</option>
+                                        <option value="cumpleaños">Cumpleaños</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm">
+                                    <label for="fecha" class="form-label">Fecha del evento</label>
+                                    <input type="text" class="form-control" placeholder="DD/MM/AAAA">
+                                </div>
+                            </div>
+                            <label for="textarea" class="form-label">Contanos más:*</label>
+                            <textarea cols="30" rows="10" class="form-control"></textarea>
+                            <div>
+                                <p class="fs-6 text-start fw-bold">
+                                    *Campos obligatorios
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body__section__contenedor__botones">
+                        <input type="reset" value="Limpiar Formulario" class="btn btn-block btn__custom2">
+                        <button type="button" class="btn btn-block btn__custom" data-bs-toggle="modal" data-bs-target="#confirmacion">Enviar Formulario</button>
+                        <div class="modal fade" id="confirmacion" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="modalTitulo"> Formulario Enviado!</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Gracias por tu consulta! Nos contactaremos a la brevedad.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-block btn__custom" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="body__footer">
+            <section>
+                <img src="multimedia/logo_footer.png" alt="logo_footerEkos">
+                <h5>Ekos Eventos© 2021</h5>
+            </section>
+            <section class="body__footer__redes">
+                <a href="https://www.facebook.com" target="_blank"><img src="multimedia/facebook.png" alt="img_facebook"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="multimedia/twitter.png" alt="img_twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="multimedia/instagram.png" alt="img_instagram"></a>
+            </section>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>
